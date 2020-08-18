@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  appName: 'Charity Finder',
+  globalGivingApiKey: 'ef367793-5ce0-4ccc-8cff-504ed30dd311',
+  globalGivingApiUrl: 'https://api.globalgiving.org/api/public'
 };
 
 /*
