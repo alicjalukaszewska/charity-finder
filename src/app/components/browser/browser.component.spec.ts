@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserComponent } from './browser.component';
 import { CharityService } from 'src/app/services/charity/charity.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { CharityServiceStub } from 'src/app/services/charity/charity.service.spec';
 
 describe('BrowserComponent', () => {
   let component: BrowserComponent;
@@ -31,7 +32,3 @@ describe('BrowserComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-class CharityServiceStub {
-  getAllOrganizations: () => {}
-}

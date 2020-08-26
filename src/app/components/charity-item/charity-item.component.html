@@ -1,1 +1,6 @@
-<p>charity-item works!</p>
+<div class="card h-100" *ngIf="organization">
+  <div class="card-header">{{organization.name}}</div>
+  <div class="card-body">
+    {{organization.mission}}
+  </div>
+</div>

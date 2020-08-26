@@ -1,1 +1,7 @@
-<p>charity-list works!</p>
+<div class="container" *ngIf="organizationsList?.length">
+  <div class="grid align-items-stretch">
+    <div *ngFor="let organization of organizationsList" class="grid-item">
+      <app-charity-item [organization]="organization"></app-charity-item>
+    </div>
+  </div>
+</div>

@@ -15,11 +15,7 @@ export class BrowserComponent implements OnInit {
   }
 
   getAllOrganizations() {
-    this.charityService.getAllOrganizations().pipe(
-      map(res => res.organizations))
-      .subscribe(res => {
-      console.log(res);
-    })
+    this.charityService.requestResult().subscribe();
   }
 
 }
